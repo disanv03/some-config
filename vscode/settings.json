@@ -1,0 +1,157 @@
+{
+    "workbench.colorTheme": "Dark+ (WoW)",
+    "workbench.startupEditor": "none",
+    "workbench.colorCustomizations": {
+
+    
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": "comment",
+            "settings": {
+              "fontStyle": "italic",
+              "foreground": "#757575",
+            }
+          },
+          {
+            "scope": "keyword",
+            "settings": {
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "string",
+            "settings": {
+                "foreground": "#1dbe45"
+            }
+        },
+        {
+            "scope": [
+                "entity.name.tag.html",
+                "entity.other.attribute-name.html",
+                "punctuation.definition.tag.html"
+            ],
+            "settings": {
+                "foreground": "#6d78af"
+            }
+        },
+        {
+            "scope": "variable",
+            "settings": {
+                "foreground": "#bb00ff"
+            }
+        },
+        {
+            "scope": "keyword.control",
+            "settings": {
+                "foreground": "#e5a93a"
+            }
+        },
+        ]
+      },
+      
+      "editor.minimap.enabled": false,
+      "editor.fontSize": 20,
+      "explorer.confirmDragAndDrop": false,
+      "vim.commandLineModeKeyBindings": [
+
+      ],
+      "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j"],
+            "after": ["h"]
+        },  
+        {
+            "before": ["l"],
+            "after": ["j"]
+        },  
+        {
+            "before": ["m"],
+            "after": ["l"]
+        },
+        {
+            "before": ["<Enter>"],
+            "after": ["a","<Enter>"]
+        },
+        {
+            "before": ["$"],
+            "after": ["}"]
+        },
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["$", "$"],
+            "after": ["<Esc>"]
+        },
+        // {
+        //     "before": ["s"],
+        //     "after": ["<Esc>", "a", " ", "<Esc>"]
+        // }
+
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j"],
+            "after": ["h"]
+        },  
+        {
+            "before": ["l"],
+            "after": ["j"]
+        },  
+        {
+            "before": ["m"],
+            "after": ["l"]
+        },
+        {
+            "before": ["$", "$"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-a>": false,
+        "<C-f>": false,
+        
+    },
+    "vim.useSystemClipboard": true,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "c:\\Users\\Administrateur\\AppData\\Local\\Programs\\Microsoft VS Code\\.vimrc",
+    "window.zoomLevel": -1,
+    "terminal.integrated.tabs.enabled": false,
+    "vim.commandLineModeKeyBindingsNonRecursive": [
+
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+              "before": ["ctrl+space"],
+              "after": ["a", " ", "<Esc>"]
+          }
+    ],
+    "git.autofetch": true,
+    "emmet.includeLanguages": {
+        "html": "html",
+        "ruby": "ruby",
+        "erb": "html"
+    },
+    "editor.fontFamily": "'Bitstream Vera Sans Mono', Consolas, 'Courier New', monospace",
+    "editor.codeActionsOnSave": {
+
+
+    
+    },
+    "breadcrumbs.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": false,
+    "workbench.layoutControl.enabled": false,
+    "extensions.ignoreRecommendations": true,
+    "workbench.tips.enabled": false,
+    "zenMode.fullScreen": false
+    
+    
+    
+
+}
