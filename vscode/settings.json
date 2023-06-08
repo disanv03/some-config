@@ -83,7 +83,7 @@
         {
             "before": ["$", "$"],
             "after": ["<Esc>"]
-        },
+        }
         // {
         //     "before": ["s"],
         //     "after": ["<Esc>", "a", " ", "<Esc>"]
@@ -112,7 +112,7 @@
         "<C-c>": false,
         "<C-v>": false,
         "<C-a>": false,
-        "<C-f>": false,
+        "<C-f>": false
         
     },
     "vim.useSystemClipboard": true,
@@ -150,8 +150,4 @@
     "extensions.ignoreRecommendations": true,
     "workbench.tips.enabled": false,
     "zenMode.fullScreen": false
-    
-    
-    
-
 }
