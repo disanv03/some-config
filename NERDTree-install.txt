@@ -1,0 +1,26 @@
+Install Plugin manager:
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+Install NERDTree inside .vimrc
+
+call plug#begin('~/.vim/plugged')
+Plug 'preservim/nerdtree'
+call plug#end()
+
+Open vim and run:
+
+:PlugInstall
+
+Use NERDTree in vim
+
+:NERDTree
+
+Map NERDTree to a shortcut (here ctrl n) on .vimrc:
+
+map <C-n> :NERDTreeToggle<CR>
+
+
+
+
