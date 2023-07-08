@@ -1,3 +1,4 @@
+"remap navigation keys
 nnoremap j h
 vnoremap j h
 nnoremap k k
@@ -6,8 +7,10 @@ nnoremap l j
 vnoremap l j
 nnoremap m l
 vnoremap m l
+" $$ to escape any mode 
 inoremap $$ <Esc>
 vnoremap $$ <Esc>
+"optional Fin and Home
 nnoremap Fin $
 nnoremap <Home> 0
 "for windows tabs jump
@@ -19,6 +22,7 @@ vnoremap <C-w>j <C-w>h
 vnoremap <C-w>k <C-w>k
 vnoremap <C-w>l <C-w>j
 vnoremap <C-w>m <C-w>l
+"making $ work on visual mode
 xnoremap $ $
 
 highlight Normal ctermfg=yellow
