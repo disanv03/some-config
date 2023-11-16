@@ -22,44 +22,24 @@ vnoremap <C-w>j <C-w>h
 vnoremap <C-w>k <C-w>k
 vnoremap <C-w>l <C-w>j
 vnoremap <C-w>m <C-w>l
-"making $ work on visual mode
+"making $$ work on visual mode
 xnoremap $ $
 
 syntax enable   " Enable syntax highlighting
 set number      " Enable line numbers
-
-
 set tabstop=4       " The width of a hard tabstop
 set shiftwidth=4    " The size of an "indent"
-set expandtab       " Use spaces instead of tabs
 
-highlight String ctermfg=darkred
-
-  
-call plug#begin('$HOME/vimfiles/plugged')
-Plug 'preservim/nerdtree'
-call plug#end()
-
-set t_Co=16
-set background=dark
-
-if v:version < 802
-    packadd! dracula
-endif
-syntax enable
-colorscheme dracula
-
-"EXECUTE shortkey: 
+"leader def and Ruby exec 
 let mapleader = ","
-"execute Ruby script
 nnoremap <leader>2 :!ruby %<CR>
 
 "cursor back
 map <leader>5 ``
 
-" Compile the current C file with gcc
+" Compile the current C file with gcc and exec
 nnoremap <leader>3 :!gcc % -o %<<CR>
-" Execute the compiled binary
 nnoremap <leader>4 :!./%<<CR>
 
+" Hidden characters
 nnoremap <leader>l :set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:#
