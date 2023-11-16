@@ -25,8 +25,6 @@ vnoremap <C-w>m <C-w>l
 "making $ work on visual mode
 xnoremap $ $
 
-highlight Normal ctermfg=yellow
-
 syntax enable   " Enable syntax highlighting
 set number      " Enable line numbers
 
@@ -64,12 +62,4 @@ nnoremap <leader>3 :!gcc % -o %<<CR>
 " Execute the compiled binary
 nnoremap <leader>4 :!./%<<CR>
 
-"save with current day format sept_22
-nnoremap <leader>1 :execute "save ~/today/2023/" . substitute(strftime("%b"), '\.', '', 'g') . "_" . strftime("%d")<CR>
-
-function! LoadDailyTemplate()
-    0r ~/today/daily_template.txt
-endfunction
-
-nnoremap <leader>d :call LoadDailyTemplate()<CR>
 nnoremap <leader>l :set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:#
