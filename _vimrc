@@ -28,7 +28,7 @@ xnoremap $ $
 syntax enable   " Enable syntax highlighting
 set number      " Enable line numbers
 set tabstop=4       " The width of a hard tabstop
-set shiftwidth=4    " The size of an "indent"
+set shiftwidth=4    " The size of an indent
 
 "leader def and Ruby exec 
 let mapleader = ","
@@ -43,3 +43,10 @@ nnoremap <leader>4 :!./%<<CR>
 
 " Hidden characters
 nnoremap <leader>l :set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:#
+
+" Buffer keys
+nnoremap <leader>l :bprevious<CR>
+nnoremap <leader>k :bnext<CR>
+
+" Toggle file tree
+nnoremap <leader>n :NERDTree<CR>
