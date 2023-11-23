@@ -1,4 +1,4 @@
-"remap navigation keys
+" navigation keys
 nnoremap j h
 vnoremap j h
 nnoremap k k
@@ -10,10 +10,10 @@ vnoremap m l
 " $$ to escape any mode 
 inoremap $$ <Esc>
 vnoremap $$ <Esc>
-"optional Fin and Home
+" optional Fin and Home
 nnoremap Fin $
 nnoremap <Home> 0
-"for windows tabs jump
+" Window tabs jump
 nnoremap <C-w>j <C-w>h
 nnoremap <C-w>k <C-w>k
 nnoremap <C-w>l <C-w>j
@@ -22,31 +22,52 @@ vnoremap <C-w>j <C-w>h
 vnoremap <C-w>k <C-w>k
 vnoremap <C-w>l <C-w>j
 vnoremap <C-w>m <C-w>l
-"making $$ work on visual mode
+" Making $$  work on visual mode
 xnoremap $ $
 
 syntax enable   " Enable syntax highlighting
 set number      " Enable line numbers
 set tabstop=4       " The width of a hard tabstop
 set shiftwidth=4    " The size of an indent
+set expandtab       " Use spaces instead of tabs
 
-"leader def and Ruby exec 
+highlight String ctermfg=darkred
+
+
+call plug#begin('$HOME/vimfiles/plugged')
+Plug 'preservim/nerdtree'
+Plug 'bling/vim-bufferline'
+Plug 'andymass/vim-matchup'
+call plug#end()
+
+set t_Co=16
+
+if v:version < 802
+    packadd! dracula
+endif
+colorscheme dracula
+
+" Define <leader> key
 let mapleader = ","
+
+" run ruby 
 nnoremap <leader>2 :!ruby %<CR>
 
-"cursor back
+" cursor back
 map <leader>5 ``
 
-" Compile the current C file with gcc and exec
+" Compile and exec C program
 nnoremap <leader>3 :!gcc % -o %<<CR>
 nnoremap <leader>4 :!./%<<CR>
 
-" Hidden characters
+" Hidden characters lists
 nnoremap <leader>l :set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:#
 
 " Buffer keys
 nnoremap <leader>l :bprevious<CR>
 nnoremap <leader>k :bnext<CR>
+nnoremap <leader>x :bd<CR>
 
-" Toggle file tree
+" Toggle files tree
 nnoremap <leader>n :NERDTree<CR>
+
