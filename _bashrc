@@ -3,12 +3,6 @@
 # for examples
 
 
-# env path for game
-export Boing="/usr/bin/pgzrun /usr/share/code-the-classics/boing/boing.py" 
-export Soccer="/usr/bin/pgzrun /usr/share/code-the-classics/soccer/soccer.py" 
-export Cavern="/usr/bin/pgzrun /usr/share/code-the-classics/cavern/cavern.py" 
-export Bunner="/usr/bin/pgzrun /usr/share/code-the-classics/bunner/bunner.py" 
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -119,36 +113,27 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$PATH:/home/zaza/scripts:/usr/bin/ruby:/home/zaza/chatai/bin:/home/zaza/programming/ruby:/home/zaza/ruby/programming/my_gpt
-alias svim='sudo vim -u /home/zaza/.vimrc'
-alias gpt='ruby ~/programming/ruby/my_gpt/gpt.rb'
+export PATH=$PATH:/usr/bin/ruby
 
-export RUBYLIB=$HOME/programming/gems/gems:$RUBYLIB
-export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
-export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
-export PKG_CONFIG_PATH="/usr/local/opt/tcl-tk/lib/pkgconfig"
 # Install Ruby Gems to ~/gems
-export GEM_HOME=$HOME/programming/gems/
-export PATH=$HOME/programming/gems/bin:$PATH
-export PATH=$HOME/programming/gems/gems:$PATH
+export GEM_HOME=$HOME/gems/
+export PATH=$HOME/gems/bin:$PATH
 
-alias work="cd ~/git/gnome_clone/ruby-scripting/ruby_cookbook/chap7/"
-alias untar="tar -zxvf"
+# Navigation & handy aliases
 alias vimrc="vim ~/.vimrc"
 alias bashrc="vim ~/.bashrc"
 alias quit="shutdown now"
 alias source_bash="source ~/.bashrc"
 alias source_vim="source ~/.vimrc"
 alias home="cd ~"
-alias os="startx"
-alias cp_ftp="cp -r ./_site ~/PiShare/"
-alias startx_lx="startx ~/.xinitrc_temp"
-alias px="pkill x"
-alias geany="startx ~/.xinit_temp2"
-alias pdf_view="startx ~/.xinit_temp3"
-alias blog="cd ~/Documents/my-blog"
-alias work_chess="cd ~/git/gnome_clone/start_over_chess_cli"
-alias lua_web="startx ~/.xinit_temp3"
+alias xfce="startx"
+alias vifmrc="vim ~/.config/vifm/vifmrc"
+alias untar="tar -zxvf"
 
+# Personal directory tree
+alias let_us_c="cd ~/gnome/c_scripts/let_us_c"
+alias ruby_scripts="cd ~/gnome/ruby-scripting"
+alias preview="batcat ~/log/overview.md"
 
+# Personal app shortcut setting
+alias solar="xsct 3500"
