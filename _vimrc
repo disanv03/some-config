@@ -38,6 +38,7 @@ call plug#begin('$HOME/vimfiles/plugged')
 Plug 'preservim/nerdtree'
 Plug 'bling/vim-bufferline'
 Plug 'andymass/vim-matchup'
+Plug 'dracula/vim'
 call plug#end()
 
 set t_Co=16
